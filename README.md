@@ -8,5 +8,5 @@ A Docker container that:
 ## Running
 ```bash
 $ docker build . -t warthog_bridge:latest
-$ docker run -it --network host --add-host CPR-CMU25=192.168.131.1 warthog_bridge bash
+$ docker run -it --network host --add-host CPR-CMU25=192.168.131.1  --hostname=steward --add-host steward=172.27.187.90 warthog_bridge bash
 ```
